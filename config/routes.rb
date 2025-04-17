@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  resources :homepages, only: [:index]
-  resource :registrations, only: [:new, :create]
+  resources :homepages, only: [ :index ]
+  resource :registrations, only: [ :new, :create ]
   resource :session
+  resource :user
   resources :passwords, param: :token
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
